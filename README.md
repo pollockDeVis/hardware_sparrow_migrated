@@ -1,4 +1,4 @@
-## ** Hardware Features for Sparrow v1.0.0**
+##  Hardware Features for Sparrow v1.0.0
 
 1. Design similar to ESP WROOM32 DevkitC board (including the power supply using voltage regulator) except for the UART-USB bridge.
 
