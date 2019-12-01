@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:esp-break-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -91,7 +90,7 @@ Text GLabel 4750 2650 2    50   Input ~ 0
 gnd
 Text GLabel 4150 2650 0    50   Input ~ 0
 led
-Text GLabel 3300 2850 2    50   Input ~ 0
+Text GLabel 3600 3150 2    50   Input ~ 0
 led
 Wire Wire Line
 	4700 3250 4500 3250
@@ -119,7 +118,7 @@ Text GLabel 8850 4400 2    50   Input ~ 0
 io22
 Text GLabel 3300 3150 2    50   Input ~ 0
 io21
-Text GLabel 3300 3250 2    50   Input ~ 0
+Text GLabel 3600 3250 2    50   Input ~ 0
 io22
 Text GLabel 3300 3450 2    50   Input ~ 0
 io25
@@ -134,9 +133,9 @@ Wire Wire Line
 Wire Wire Line
 	6700 2200 6300 2200
 Text GLabel 7300 2100 2    50   Input ~ 0
-tx
+TX2
 Text GLabel 5700 2100 0    50   Input ~ 0
-rx
+RX2
 $Comp
 L Regulator_Linear:AP1117-33 U2
 U 1 1 5DB9A6F8
@@ -575,4 +574,17 @@ Text GLabel 8850 4200 2    50   Input ~ 0
 adc4
 Text GLabel 8350 4200 0    50   Input ~ 0
 adc3
+Wire Wire Line
+	3600 3250 3550 3250
+Wire Wire Line
+	3600 3150 3550 3150
+Wire Wire Line
+	3550 3150 3550 3250
+Connection ~ 3550 3250
+Wire Wire Line
+	3550 3250 3300 3250
+Text GLabel 3300 2850 2    50   Input ~ 0
+RX2
+Text GLabel 3300 2750 2    50   Input ~ 0
+TX2
 $EndSCHEMATC
