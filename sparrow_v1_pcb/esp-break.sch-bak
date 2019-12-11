@@ -624,6 +624,8 @@ Wire Wire Line
 	5700 1350 5700 1250
 Text GLabel 8600 3450 0    50   Input ~ 0
 5_c1
+Wire Wire Line
+	8600 3450 8750 3450
 $Comp
 L Device:R RF2
 U 1 1 5DF4F9C8
@@ -841,6 +843,4 @@ Wire Wire Line
 	10500 3550 10400 3550
 Wire Wire Line
 	3200 2500 3500 2500
-Wire Wire Line
-	8600 3450 8750 3450
 $EndSCHEMATC
