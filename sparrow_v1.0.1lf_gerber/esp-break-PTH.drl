@@ -1,7 +1,7 @@
 M48
-; DRILL file {KiCad (5.1.4)-1} date 13-Dec-19 3:16:49 PM
+; DRILL file {KiCad (5.1.4)-1} date 14-Dec-19 1:31:20 AM
 ; FORMAT={2:4/ absolute / inch / suppress leading zeros}
-; #@! TF.CreationDate,2019-12-13T15:16:49+08:00
+; #@! TF.CreationDate,2019-12-14T01:31:20+08:00
 ; #@! TF.GenerationSoftware,Kicad,Pcbnew,(5.1.4)-1
 ; #@! TF.FileFunction,Plated,1,2,PTH
 FMAT,2
@@ -72,9 +72,9 @@ X50520Y-40370
 X50520Y-41370
 X50520Y-42370
 T3
-X50440Y-44160
-X50440Y-21350
 X41400Y-21340
+X50440Y-44160
 X41400Y-44160
+X50440Y-21350
 T0
 M30

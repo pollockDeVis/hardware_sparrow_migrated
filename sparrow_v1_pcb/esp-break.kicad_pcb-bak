@@ -3661,7 +3661,7 @@
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /5DCB9F6F)
-    (fp_text reference PWR1 (at 0.03048 -3.97256) (layer F.SilkS)
+    (fp_text reference PWR1 (at 0.10414 -4.75234) (layer F.SilkS)
       (effects (font (size 0.5 0.5) (thickness 0.125)))
     )
     (fp_text value Conn_01x02_Male (at 0 4.87) (layer F.Fab)
