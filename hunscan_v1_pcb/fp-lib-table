@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name graphics)(type KiCad)(uri ${KIPRJMOD}/graphics.pretty)(options "")(descr ""))
+  (lib (name hunscan)(type KiCad)(uri C:/Users/Pollock/Documents/Repo/hardware_dev_df/hunscan_v1_pcb/graphics.pretty)(options "")(descr ""))
 )
