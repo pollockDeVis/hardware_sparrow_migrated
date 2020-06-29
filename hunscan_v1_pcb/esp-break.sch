@@ -108,7 +108,7 @@ Text GLabel 2550 4050 2    50   Input ~ 0
 vcc
 Text GLabel 2250 4650 3    50   Input ~ 0
 gnd
-Text GLabel 6400 2800 1    50   Input ~ 0
+Text GLabel 6400 2800 0    50   Input ~ 0
 vcc_d
 Text GLabel 2600 800  2    50   Input ~ 0
 3.3
@@ -135,7 +135,7 @@ F 3 "~" H 7250 3100 50  0001 C CNN
 	1    7250 3100
 	1    0    0    -1  
 $EndComp
-Text GLabel 7250 2800 1    50   Input ~ 0
+Text GLabel 7250 2800 2    50   Input ~ 0
 3.3
 Wire Wire Line
 	7700 3350 7700 3500
@@ -193,7 +193,7 @@ U 1 1 5DCCF7DB
 P 4700 3050
 F 0 "D1" H 4693 2795 50  0000 C CNN
 F 1 "LED" H 4693 2886 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 4700 3050 50  0001 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 4700 3050 50  0001 C CNN
 F 3 "~" H 4700 3050 50  0001 C CNN
 	1    4700 3050
 	-1   0    0    1   
@@ -276,19 +276,6 @@ $EndComp
 Wire Wire Line
 	6850 2450 6850 3100
 Connection ~ 6850 3100
-Wire Wire Line
-	6550 2150 6550 2800
-Connection ~ 6550 2800
-Wire Wire Line
-	7150 2150 7150 2800
-Wire Wire Line
-	7150 2800 7250 2800
-Connection ~ 7150 2800
-Wire Wire Line
-	7250 2800 7250 2850
-Wire Wire Line
-	7700 2850 7250 2850
-Connection ~ 7250 2850
 $Comp
 L Device:L L1
 U 1 1 5EED3FA0
@@ -435,4 +422,86 @@ F 3 "~" H 2400 4200 50  0001 C CNN
 	1    2250 4250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5EFA120F
+P 5700 1050
+F 0 "J3" V 5664 662 50  0000 R CNN
+F 1 "Conn_01x06" V 5573 662 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5700 1050 50  0001 C CNN
+F 3 "~" H 5700 1050 50  0001 C CNN
+	1    5700 1050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6000 1600 3    50   Input ~ 0
+3.3
+$Comp
+L Device:R R3
+U 1 1 5EFA5F1D
+P 6000 1450
+F 0 "R3" H 6070 1496 50  0000 L CNN
+F 1 "10k" H 6070 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5930 1450 50  0001 C CNN
+F 3 "~" H 6000 1450 50  0001 C CNN
+	1    6000 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1300 6000 1250
+Text GLabel 5500 1250 3    50   Input ~ 0
+3.3
+Text GLabel 5600 1250 3    50   Input ~ 0
+gnd
+Text GLabel 5700 1250 3    50   Input ~ 0
+SCL
+Text GLabel 5800 1250 3    50   Input ~ 0
+SDA
+NoConn ~ 3200 3300
+NoConn ~ 3200 3200
+NoConn ~ 3200 3100
+NoConn ~ 3200 3000
+NoConn ~ 3200 2900
+NoConn ~ 3200 2800
+NoConn ~ 3200 2700
+NoConn ~ 5900 1250
+NoConn ~ 2000 1200
+NoConn ~ 2000 1300
+NoConn ~ 2000 2200
+NoConn ~ 2000 2700
+NoConn ~ 2000 2600
+NoConn ~ 2000 2500
+NoConn ~ 2000 2400
+NoConn ~ 2000 2300
+NoConn ~ 3200 1200
+NoConn ~ 3200 1400
+NoConn ~ 3200 1500
+NoConn ~ 3200 1600
+NoConn ~ 3200 1700
+NoConn ~ 3200 1800
+NoConn ~ 3200 1900
+NoConn ~ 3200 2000
+NoConn ~ 3200 2100
+NoConn ~ 3200 2200
+NoConn ~ 3200 2300
+NoConn ~ 2150 4650
+NoConn ~ 2550 4250
+NoConn ~ 2550 4350
+NoConn ~ 2550 4450
+Wire Wire Line
+	7150 2150 7250 2150
+Wire Wire Line
+	6550 2150 6400 2150
+Wire Wire Line
+	7150 2800 7250 2800
+Wire Wire Line
+	7250 2800 7250 2850
+Wire Wire Line
+	7700 2800 7700 2850
+Connection ~ 7250 2800
+Wire Wire Line
+	7250 2800 7700 2800
+Wire Wire Line
+	6400 2150 6400 2800
+Wire Wire Line
+	7250 2150 7250 2800
 $EndSCHEMATC
