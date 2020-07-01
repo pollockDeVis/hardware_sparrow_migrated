@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../sparrow_v1.0.1lf_pick_n_place/"))
+      (outputdirectory "../hunscan_v1_gerber/"))
   )
 
   (net 0 "")
@@ -4871,7 +4871,7 @@
   (segment (start 110.275 92.95) (end 111.9 94.575) (width 0.25) (layer F.Cu) (net 16))
   (segment (start 111.9 94.575) (end 121.575 94.575) (width 0.25) (layer F.Cu) (net 16))
 
-  (zone (net 4) (net_name gnd) (layer F.Cu) (tstamp 5EFB01FE) (hatch edge 0.508)
+  (zone (net 4) (net_name gnd) (layer F.Cu) (tstamp 5EFC8E4D) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -5370,7 +5370,7 @@
       )
     )
   )
-  (zone (net 4) (net_name gnd) (layer B.Cu) (tstamp 5EFB01FB) (hatch edge 0.508)
+  (zone (net 4) (net_name gnd) (layer B.Cu) (tstamp 5EFC8E4A) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
