@@ -146,7 +146,7 @@ vcc
 Text GLabel 2250 4650 3    50   Input ~ 0
 gnd
 Text GLabel 6400 2800 1    50   Input ~ 0
-vcc
+Vout
 Text GLabel 2600 800  2    50   Input ~ 0
 3.3
 Text GLabel 2600 3600 2    50   Input ~ 0
@@ -217,21 +217,6 @@ en
 Wire Wire Line
 	9350 3350 9750 3350
 Text GLabel 9500 3050 1    50   Input ~ 0
-gnd
-$Comp
-L Connector:Conn_01x02_Male PWR1
-U 1 1 5DCB9F6F
-P 3200 4350
-F 0 "PWR1" V 3262 4394 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 3353 4394 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3200 4350 50  0001 C CNN
-F 3 "~" H 3200 4350 50  0001 C CNN
-	1    3200 4350
-	0    1    1    0   
-$EndComp
-Text GLabel 3200 4550 3    50   Input ~ 0
-vcc
-Text GLabel 3100 4550 3    50   Input ~ 0
 gnd
 $Comp
 L Device:LED D1
@@ -504,4 +489,158 @@ NoConn ~ 2000 2400
 NoConn ~ 2000 2500
 NoConn ~ 2000 2600
 NoConn ~ 2000 2700
+$Comp
+L Regulator_Switching:TPS62153 U3
+U 1 1 5F00BF3A
+P 6900 4700
+F 0 "U3" H 6900 5381 50  0000 C CNN
+F 1 "TPS62153" H 6900 5290 50  0000 C CNN
+F 2 "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias" H 7050 4250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/TPS62150.pdf" H 6900 4700 50  0001 C CNN
+	1    6900 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7000 3900 1    50   Input ~ 0
+vcc
+Wire Wire Line
+	6500 4500 6500 4200
+Wire Wire Line
+	6500 4200 6800 4200
+Wire Wire Line
+	6800 4200 7000 4200
+Connection ~ 6800 4200
+Wire Wire Line
+	7000 4200 7000 4000
+Connection ~ 7000 4200
+$Comp
+L Device:C C8
+U 1 1 5F0139AE
+P 6350 4600
+F 0 "C8" V 6098 4600 50  0000 C CNN
+F 1 "C" V 6189 4600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6388 4450 50  0001 C CNN
+F 3 "~" H 6350 4600 50  0001 C CNN
+	1    6350 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 4600 6100 4600
+Text GLabel 6100 4700 3    50   Input ~ 0
+gnd
+Wire Wire Line
+	6100 4700 6100 4600
+Connection ~ 6100 4600
+Wire Wire Line
+	6100 4600 5950 4600
+$Comp
+L Device:C C7
+U 1 1 5F0181AC
+P 6100 4350
+F 0 "C7" H 6215 4396 50  0000 L CNN
+F 1 "C" H 6215 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 6138 4200 50  0001 C CNN
+F 3 "~" H 6100 4350 50  0001 C CNN
+	1    6100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4500 6100 4600
+Wire Wire Line
+	6100 4200 6100 4000
+Wire Wire Line
+	6100 4000 7000 4000
+Connection ~ 7000 4000
+Wire Wire Line
+	7000 4000 7000 3900
+Wire Wire Line
+	6500 4700 6500 4750
+Wire Wire Line
+	6500 4750 6400 4750
+Wire Wire Line
+	6400 4750 6400 4800
+Connection ~ 6500 4750
+Wire Wire Line
+	6500 4750 6500 4800
+Text GLabel 6400 4800 3    50   Input ~ 0
+gnd
+Wire Wire Line
+	6800 5200 6800 5400
+Wire Wire Line
+	6800 5400 7000 5400
+Wire Wire Line
+	7000 5400 7000 5200
+Wire Wire Line
+	7300 4900 7300 5400
+Wire Wire Line
+	7300 5400 7000 5400
+Connection ~ 7000 5400
+Text GLabel 7000 5400 3    50   Input ~ 0
+gnd
+Wire Wire Line
+	7300 4700 7800 4700
+Wire Wire Line
+	7800 4700 7800 4500
+$Comp
+L Device:R R7
+U 1 1 5F02689D
+P 7900 4650
+F 0 "R7" H 7970 4696 50  0000 L CNN
+F 1 "R" H 7970 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 4650 50  0001 C CNN
+F 3 "~" H 7900 4650 50  0001 C CNN
+	1    7900 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4800 7900 4800
+Wire Wire Line
+	7800 4500 7900 4500
+Wire Wire Line
+	7900 4500 8200 4500
+Connection ~ 7900 4500
+$Comp
+L Device:C C9
+U 1 1 5F02D11A
+P 8200 4700
+F 0 "C9" H 8315 4746 50  0000 L CNN
+F 1 "C" H 8315 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8238 4550 50  0001 C CNN
+F 3 "~" H 8200 4700 50  0001 C CNN
+	1    8200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4500 8200 4550
+Text GLabel 8200 4900 3    50   Input ~ 0
+gnd
+Wire Wire Line
+	8200 4850 8200 4900
+$Comp
+L Device:L L1
+U 1 1 5F032225
+P 7550 4500
+F 0 "L1" V 7740 4500 50  0000 C CNN
+F 1 "L" V 7649 4500 50  0000 C CNN
+F 2 "Inductor_SMD:L_Coilcraft_XxL4020" H 7550 4500 50  0001 C CNN
+F 3 "~" H 7550 4500 50  0001 C CNN
+	1    7550 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7300 4500 7400 4500
+Wire Wire Line
+	7700 4500 7800 4500
+Connection ~ 7800 4500
+Text GLabel 8250 4500 2    50   Output ~ 0
+Vout
+Wire Wire Line
+	8200 4500 8250 4500
+Connection ~ 8200 4500
+Text GLabel 6900 5200 3    50   Output ~ 0
+gnd
+Text GLabel 10100 3150 2    50   Input ~ 0
+vcc
+Wire Wire Line
+	9750 3150 10100 3150
+Connection ~ 9750 3150
 $EndSCHEMATC
